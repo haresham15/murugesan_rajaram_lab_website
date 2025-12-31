@@ -6,27 +6,39 @@ import Link from "next/link";
 
 const teamMembers = [
     {
-        name: "Dr. Sarah Chen",
-        role: "Postdoctoral Fellow",
-        description: "Focusing on macrophage metabolism in heart failure.",
+        name: "Naresh Kumar",
+        role: "Researcher",
+        description: "NULL",
         image: null // Placeholder handling
     },
     {
-        name: "Michael Ross",
-        role: "PhD Candidate",
-        description: "Studying TLR signaling pathways.",
+        name: "Sameerul Salam",
+        role: "Post Doctoral Scholar",
+        description: "NULL",
         image: null
     },
     {
-        name: "Emily Zhang",
-        role: "Research Assistant",
-        description: "Lab management and genotyping core.",
+        name: "Arnav Gopinath",
+        role: "Undergraduate Student",
+        description: "NULL",
         image: null
     },
     {
-        name: "David Kumar",
-        role: "Undergraduate Researcher",
-        description: "Assisting with cell culture and PCR.",
+        name: "Simran Grissom",
+        role: "Undergraduate Student",
+        description: "NULL",
+        image: null
+    },
+    {
+        name: "Lasya Kopuri",
+        role: "Undergraduate Student",
+        description: "NULL",
+        image: null
+    },
+    {
+        name: "Aakash Shah",
+        role: "Undergraduate Student",
+        description: "NULL",
         image: null
     }
 ];

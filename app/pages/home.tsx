@@ -70,15 +70,15 @@ export default function HomeContent() {
                     >
                         {[1, 2, 3].map((i) => (
                             <span key={i} className="flex items-center gap-12">
-                                <span className="flex items-center gap-2 text-sm font-medium text-gray-700">
+                                <span className="flex items-center gap-2 text-sm font-medium text-white">
                                     <Award className="w-4 h-4 text-osu-scarlet" />
                                     <strong>Latest Grant:</strong> Awarded NIH R01 to study macrophage signaling in cardiac remodeling.
                                 </span>
-                                <span className="flex items-center gap-2 text-sm font-medium text-gray-700">
+                                <span className="flex items-center gap-2 text-sm font-medium text-white">
                                     <BookOpen className="w-4 h-4 text-osu-scarlet" />
                                     <strong>New Publication:</strong> "Mechanisms of inflammasome activation..." in <em>Circulation Research</em>.
                                 </span>
-                                <span className="flex items-center gap-2 text-sm font-medium text-gray-700">
+                                <span className="flex items-center gap-2 text-sm font-medium text-white">
                                     <Microscope className="w-4 h-4 text-osu-scarlet" />
                                     <strong>Lab Update:</strong> Welcome new postdoc Dr. Sarah Chen!
                                 </span>
@@ -98,10 +98,10 @@ export default function HomeContent() {
                         transition={{ duration: 0.6 }}
                         className="space-y-6"
                     >
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 border-l-4 border-osu-scarlet pl-6">
+                        <h2 className="text-3xl md:text-4xl font-bold text-white border-l-4 border-osu-scarlet pl-6">
                             Leading the Fight Against Cardiac Inflammation
                         </h2>
-                        <div className="text-lg text-gray-600 space-y-4 leading-relaxed">
+                        <div className="text-lg text-white space-y-4 leading-relaxed">
                             <p>
                                 Dr. Murugesan Rajaram, PhD, FAHA, is a Principal Investigator at The Ohio State University College of Medicine. His lab focuses on deciphering the complex crosstalk between the innate immune system and cardiac physiology.
                             </p>

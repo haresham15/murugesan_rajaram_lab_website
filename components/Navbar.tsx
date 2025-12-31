@@ -22,7 +22,7 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <Link href="/" className="text-xl font-bold tracking-tight text-gray-900">
-                    Rajaram Lab <span className="text-osu-scarlet">| OSU</span>
+                    Murugesan Rajaram's Lab <span className="text-osu-scarlet">| OSU</span>
                 </Link>
 
                 {/* Desktop Nav */}

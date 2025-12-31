@@ -69,10 +69,10 @@ export default function PublicationsContent() {
                         Publications
                     </motion.h1>
                     <div className="flex gap-4">
-                        <Link href="https://scholar.google.com" target="_blank" className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-white transition-colors">
+                        <Link href="https://scholar.google.com" target="_blank" className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg text-sm text-black font-medium hover:bg-white transition-colors">
                             <ExternalLink size={16} /> Google Scholar
                         </Link>
-                        <Link href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-white transition-colors">
+                        <Link href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg text-sm text-black font-medium hover:bg-white transition-colors">
                             <ExternalLink size={16} /> PubMed
                         </Link>
                     </div>
