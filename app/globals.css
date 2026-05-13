@@ -2,30 +2,31 @@
 
 @theme {
   --color-osu-scarlet: #BB0000;
+  --color-osu-scarlet-dark: #8B0000;
   --color-osu-gray: #666666;
-  --color-osu-off-white: #F8F9FA;
+  --color-osu-off-white: #FAFAF7;
+  --color-osu-dark: #1B1B1B;
+  --color-osu-slate: #4A5568;
 
   --font-inter: Inter, sans-serif;
 }
 
-/* Custom Utilities if needed, or stick to standard Tailwind */
 @layer base {
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-inter), sans-serif;
+  html {
+    scroll-behavior: smooth;
   }
-}
 
-:root {
-  --color-background: #ffffff;
-  --color-foreground: #171717;
-}
+  body {
+    background-color: #ffffff;
+    color: #171717;
+    font-family: var(--font-inter), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #0a0a0a;
-    --color-foreground: #ededed;
+  ::selection {
+    background-color: rgba(187, 0, 0, 0.15);
+    color: inherit;
   }
 }
 
@@ -33,4 +34,51 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Ken Burns animation for hero background */
+@keyframes kenburns {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-kenburns {
+  animation: kenburns 25s ease-in-out infinite;
+}
+
+/* Subtle floating animation for decorative elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient text utility */
+.text-gradient-scarlet {
+  background: linear-gradient(135deg, #BB0000, #D42A2A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle grid background pattern */
+.bg-grid {
+  background-image: 
+    linear-gradient(rgba(187, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(187, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
